@@ -1,0 +1,27 @@
+/* 
+Theme Name: Frindle Child
+Theme URL: http://codenavigator.tech
+Description: Frindle Child Theme
+Author: Mark Dean
+Author URL: http://codenavigator.tech
+Template: frindle
+Version: 1.0.0
+Text Domain: frindle-child
+*/
+
+.site-header {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 90px;
+  margin: 0;
+}
+
+
+.site-branding h2  a {
+  color: navy;
+}
+
+#tagline {
+  padding-top: 60px;
+  text-indent: -40px;
+}
