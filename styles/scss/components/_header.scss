@@ -1,0 +1,141 @@
+@import 'components/variables';
+
+%flex {
+  &-row {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  &-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+%container {
+  &-structure {
+    @extend %flex-column;
+    height: 100%;
+    width: 100%;
+  }
+  &-skin {
+    background-color: $color-primary;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.container {
+  @extend %container-structure;
+  @extend %container-skin;
+}
+
+%site-header {
+  &-structure {
+    @extend %flex-row;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-height: 50px;
+  }
+  &-skin {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: $color-secondary;
+  }
+}
+
+.site-header {
+  @extend %site-header-structure;
+  @extend %site-header-skin;
+}
+
+%site-branding {
+  &-structure {
+    @extend %flex-column;
+    justify-content: flex-start;
+    width: 30%;
+  }
+  &-skin {
+    border-color:  transparent transparent $color-tertiary transparent;
+    border-width: 0 $toolbar-height $toolbar-height 0;
+    border-style: solid;
+    height: 0;
+  }
+}
+
+.site-branding {
+  @extend %site-branding-structure;
+  @extend %site-branding-skin;
+}
+
+// .site-branding p {
+//   width: 100%;
+//   flex: 1;
+// }
+.site-title {
+  width: 100%;
+  min-height: 50px;
+  @extend %flex-column;
+}
+
+// .site-title h2 a {
+//   color: white;
+//   font-size: 28px;
+// }
+
+#logo {
+  color: white;
+  font-size: 40px;
+}
+
+#tagline {
+  padding: 0px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+
+// .main-nav {
+//   @extend %flex-row;
+//   display: none;
+// }
+
+// // .logo {
+// //   font-size: $fontsize-large;
+// //   color: white;
+// //   margin: 0px;
+// // }
+
+// // .tagline {
+// //   font-size: $fontsize-small;
+// //   color: $color-secondary;
+// //   padding-top: .5em;
+// //   width: 350px;
+// //   padding-left: 50px;
+// // }
+
+// .menu {
+  
+//   @extend %flex-row;
+//   list-style: none;
+//   text-transform: uppercase;
+//   flex-wrap: wrap;
+//   padding-top: .05em;
+
+//   li {
+//     width: 165px;
+//     // margin: 10px 0px;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//     color: $color-tertiary;
+//     a {
+//       text-decoration: none;
+//       padding: 10px;
+//       color: $color-tertiary;
+//     }
+//     a:hover {
+//       color: $color-secondary;
+//       background-color: $color-tertiary;
+//     }
+//   }
+// }
