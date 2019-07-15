@@ -4,33 +4,22 @@
 	<head>
 		<meta charset="<?php bloginfo('charset');?>">
 		<meta name="viewport" content="width=device-width">
-		
 		<?php wp_head(); ?>
 	</head>
 
 	<body <?php body_class(); ?>>
 		<div class="container" id="container">
 					
-			<!-- site-header -->
-			
+			<!-- Site-Header -->
 			<div class="site-header">
-					
-				<div class="site-branding">
-						<div class="site-title">
-							<h2>
-								<a id="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a>
-							</h2>
-							<div id="tagline"><?php bloginfo('description'); ?> </div>
-						</div>
-				</div><!-- .site-branding -->
 
-				<div style="width: 800px;" >
-					<img src="../images/Cygnus_2006-10-21_1_PS.jpg" alt="" width="200" height="50">
-				</div>				
+				<!-- Site-Branding -->
+				<div class="site-branding"></div>
+
+				<!-- Site-banner -->
+				<div class="site-banner"></div>				
 								
-			</div>
-			
-			<!-- /site-header -->
+			</div><!-- /site-header -->
 					
 					
 					
